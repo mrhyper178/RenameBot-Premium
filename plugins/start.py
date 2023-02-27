@@ -85,8 +85,8 @@ async def send_doc(client,message):
         try:
             await client.get_chat_member(update_channel, user_id)
         except UserNotParticipant:
-            await message.reply_text("**__You are not Joind my channel__** ",
- t meAsumoviefinder.id,
+            await message.reply_text("**__You are not subscribed my channel__** ",
+       		reply_to_message_id = message.id,
             reply_markup = InlineKeyboardMarkup(
             [ [ InlineKeyboardButton("Support 🇮🇳" ,url=f"https://t.me/{update_channel}") ]   ]))
             return
